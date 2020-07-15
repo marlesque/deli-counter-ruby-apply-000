@@ -1,25 +1,30 @@
 # Write your code here.
 
-def take_a_number(customers, customer)
-  counter = 1
-  numCustomers = customers.length
-  if numCustomers >= 0 
-    customers.push(customer)
-  end
-loop do 
-  if customers[counter-1] == customer
+num_of_customer = 0
+def num_customer(customers)
+  num_of_customer += 1
+  return num_of_customer
+  
+# def take_a_number(customers, customer)
+#   counter = 1
+#   numCustomers = customers.length
+#   if numCustomers >= 0 
+#     customers.push(customer)
+#   end
+# loop do 
+#   if customers[counter-1] == customer
     
-    puts "Welcome, #{customer}. You are number #{counter} in line."
-    break
-  elsif counter > numCustomers
-    customers.push(customer)
-    return customers
-  else
-    counter += 1
-  end
-  end
+#     puts "Welcome, #{customer}. You are number #{counter} in line."
+#     break
+#   elsif counter > numCustomers
+#     customers.push(customer)
+#     return customers
+#   else
+#     counter += 1
+#   end
+#   end
  
-end
+# end
 
 
 def line(customers)
@@ -43,6 +48,5 @@ def now_serving(customers)
   else
     name = customers.shift
     puts "Currently serving #{name}."
-    
   end
 end
